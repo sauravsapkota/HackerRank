@@ -14,7 +14,7 @@ def sockMerchant(n, ar):
 
     for i in ar:
         if i in colors:
-            pairs += 1;
+            pairs += 1
             colors.pop(colors.index(i))
         else:
             colors.append(i)
