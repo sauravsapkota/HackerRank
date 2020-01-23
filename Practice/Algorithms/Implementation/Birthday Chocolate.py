@@ -17,7 +17,7 @@ def birthday(s, d, m):
         if (sum == d):
             count += 1
 
-    return count;
+    return count
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
