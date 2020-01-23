@@ -1,10 +1,7 @@
 #!/bin/python3
 
-import math
 import os
-import random
-import re
-import sys
+
 
 # Complete the formingMagicSquare function below.
 class Magic(object):
@@ -30,8 +27,7 @@ class Magic(object):
                         total += max([i, j]) - min([i, j])
             totals.append(total)
         return min(totals)
-# def formingMagicSquare(s):
-#     print(s)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
