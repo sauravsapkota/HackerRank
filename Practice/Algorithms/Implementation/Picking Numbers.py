@@ -2,7 +2,6 @@
 
 import os
 
-
 # Complete the 'pickingNumbers' function below.
 def pickingNumbers(a):
     a.sort()
