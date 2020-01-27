@@ -1,6 +1,5 @@
 #!/bin/python3
 
-
 # Complete the extraLongFactorials function below.
 def extraLongFactorials(n):
     factorial = 1
@@ -12,7 +11,7 @@ def extraLongFactorials(n):
     else:
         for i in range(1, n + 1):
             factorial = factorial * i
-        print(factorial)
+        print(factorial)    
 
 
 if __name__ == '__main__':
