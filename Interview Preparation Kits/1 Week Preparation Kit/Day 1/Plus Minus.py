@@ -13,20 +13,16 @@ import sys
 #
 
 def plusMinus(arr):
-    # Write your code here
-    pos=0
-    neg=0
-    zero=0
-    for i in arr:
-        if i>0:
-            pos+=1
-        elif i<0:
-            neg+=1
-        else:
-            zero+=1
-    print(round((pos/len(arr)),6))
-    print(round((neg/len(arr)),6))
-    print(round((zero/len(arr)),6))   
+    count = len(arr)
+
+    p_count = sum(1 for num in arr if num > 0)  # Use generator expression and sum function
+    n_count = sum(1 for num in arr if num < 0)
+    z_count = count - p_count - n_count  # Calculate zero count directly
+
+    # Print formatted output using f-strings
+    print(f'{p_count / count:.6f}')
+    print(f'{n_count / count:.6f}')
+    print(f'{z_count / count:.6f}')
 
 if __name__ == '__main__':
     n = int(input().strip())
